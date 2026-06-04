@@ -1,0 +1,23 @@
+import { Routes, Route } from "react-router-dom";
+
+import Footer from "../components/Footer";
+import Home from "../pages/Home"
+import Navbar from "../components/Navbar";
+import "../App.css"
+import "../index.css"
+
+function App() {
+  return (
+    <>
+      <div className="bg-gray-100 dark:bg-zinc-950 text-gray-900 dark:text-gray-100">
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
