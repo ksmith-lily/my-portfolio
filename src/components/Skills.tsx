@@ -15,7 +15,7 @@ export default function Skills() {
       <div className="flex flex-col border-b border-dashed border-gray-200 dark:border-zinc-800">
         
         {/* Left */}
-        <div className="text-left border-b border-dashed border-gray-200 dark:border-zinc-800">
+        <div className="text-left border-t border-b border-dashed border-gray-200 dark:border-zinc-800">
           <SectionLabel border={true}>
             TECH STACK
           </SectionLabel>
@@ -25,22 +25,22 @@ export default function Skills() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-4 w-full">
+        <div className="grid lg:grid-cols-4 grid-cols-2 w-full">
   
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800">
-            <img src={python} alt="Python" className="w-40" />
+            <img src={python} alt="Python" className="lg:w-40 w-20" />
           </div>
 
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800 py-10">
-            <img src={js} alt="JavaScript" className="w-40" />
+            <img src={js} alt="JavaScript" className="lg:w-40 w-20" />
           </div>
 
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800 py-10">
-            <img src={react} alt="React" className="w-40" />
+            <img src={react} alt="React" className="lg:w-40 w-20" />
           </div>
 
           <div className="flex-1 flex items-center justify-center py-10">
-            <img src={django} alt="Django" className="w-40" />
+            <img src={django} alt="Django" className="lg:w-40 w-20" />
           </div>
 
         </div>
@@ -56,7 +56,7 @@ export default function Skills() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-4 w-full">
+        <div className="grid lg:grid-cols-4 grid-cols-2 w-full">
   
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800">
             <img src={python} alt="Python" className="w-40" />
@@ -87,7 +87,7 @@ export default function Skills() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-4 w-full">
+        <div className="grid lg:grid-cols-4 grid-cols-2 w-full">
   
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800">
             <img src={python} alt="Python" className="w-40" />
@@ -119,7 +119,7 @@ export default function Skills() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-4 w-full">
+        <div className="grid lg:grid-cols-4 grid-cols-2 w-full">
   
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800">
             <img src={python} alt="Python" className="w-40" />
@@ -150,7 +150,7 @@ export default function Skills() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-4 w-full">
+        <div className="grid lg:grid-cols-4 grid-cols-2 w-full">
   
           <div className="flex-1 flex items-center justify-center border-r border-dashed border-gray-200 dark:border-zinc-800">
             <img src={python} alt="Python" className="w-40" />

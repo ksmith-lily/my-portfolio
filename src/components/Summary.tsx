@@ -20,12 +20,12 @@ export default function Summary() {
           <SectionLabel border={true}>
             SUMMARY
           </SectionLabel>
-          <SectionTitle className="text-5xl text-green-500">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-4xl text-green-500">
             Hi there,
           </SectionTitle>
         </div>
 
-        <div className="text-xl text-left my-4 tracking-wide">
+        <div className="xl:text-xl lg:text-xl text-base text-left my-4 tracking-wide">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>

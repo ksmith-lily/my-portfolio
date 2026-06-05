@@ -9,7 +9,7 @@ export default function Hero() {
         <SectionLabel marginClass="-mb-2">
             FULL STACK
         </SectionLabel>
-        <SectionTitle className="text-6xl">
+        <SectionTitle className="xl:text-6xl lg:text-6xl text-4xl">
           Software Developer
         </SectionTitle>
       </div>
@@ -17,7 +17,7 @@ export default function Hero() {
         <Typewriter text="< I’m passionate about writing clean code, continuous learning, and my cats. />" />
       </div>
       <div className="flex flex-col gap-2 justify-end items-end">
-        <SectionTitle className="text-8xl">
+        <SectionTitle className="xl:text-8xl lg:text-8xl text-4xl">
           Karen Angelica Smith
         </SectionTitle>
         {/* <p className="text-lg text-gray-600 dark:text-gray-400">
