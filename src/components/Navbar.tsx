@@ -26,7 +26,17 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/contact" className="hover:text-black dark:hover:text-white transition">
-              Contact
+              Tech Stack
+            </a>
+          </li>
+          <li>
+            <a href="/contact" className="hover:text-black dark:hover:text-white transition">
+              Professional Experience
+            </a>
+          </li>
+          <li>
+            <a href="/contact" className="hover:text-black dark:hover:text-white transition">
+              Personal Projects
             </a>
           </li>
           <ThemeToggle />
