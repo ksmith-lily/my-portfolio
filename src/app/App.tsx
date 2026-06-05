@@ -9,7 +9,7 @@ import "../index.css"
 function App() {
   return (
     <>
-      <div className="bg-gray-100 dark:bg-zinc-950 text-gray-900 dark:text-gray-100">
+      <div className="bg-white dark:bg-[rgb(9,8,12)] text-gray-900 dark:text-gray-100">
         <Navbar />
         <Routes>
         <Route path="/" element={<Home />} />
