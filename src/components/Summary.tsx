@@ -10,7 +10,7 @@ export default function Summary() {
           <SectionLabel border={true}>
             SUMMARY
           </SectionLabel>
-          <SectionTitle className="xl:text-5xl lg:text-5xl text-4xl text-green-500">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-4xl">
             Hi there,
           </SectionTitle>
         </div>

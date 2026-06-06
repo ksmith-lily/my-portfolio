@@ -59,12 +59,12 @@ export default function Project() {
           <SectionLabel border={true}>
             PERSONAL
           </SectionLabel>
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-4xl">
             Projects.
           </SectionTitle>
         </div>
 
-        <div className="grid grid-cols-2 items-stretch justify-center px-6">
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-stretch justify-center px-6">
           {items.map((item, index) => {
             const isOdd = index % 2 === 0;
             const isLastGridItem = index === items.length - 1 || index === items.length - 2;
@@ -76,20 +76,20 @@ export default function Project() {
               }>
                 {/* Title row with circle */}
                 <div className="p-10">
-                  <div className="flex lg:flex-row flex-col justify-between items-center">
-                    <h3 className="text-xl font-bold tracking-tigtest text-balance">{item.title}</h3>
+                  <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start mb-2">
+                    <h3 className="lg:text-xl text-base font-bold tracking-tigtest text-balance">{item.title}</h3>
                     {item.status && 
-                      <div className="bg-rose-600 rounded px-2 text-sm tracking-tigtest text-balance text-white">IN PROGRESS</div>
+                      <div className="bg-rose-600 rounded px-2 lg:text-sm text-xs tracking-tigtest text-balance text-white">IN PROGRESS</div>
                     }
                   </div>
-                  <p className="text-gray-500 mb-4">{item.subtitle}</p>
-                  <p className="text-gray-400 mb-4">{item.description}</p>
+                  <p className="text-gray-500 mb-4 lg:text-base text-xs">{item.subtitle}</p>
+                  <p className="text-gray-400 mb-4 lg:text-base text-xs">{item.description}</p>
                   <div className="flex justify-end">
                     <a
                       href={item.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white/5 hover:bg-white/10 px-2 py-1 rounded-lg text-2xl"
+                      className="bg-white/5 hover:bg-white/10 px-2 py-1 rounded-lg lg:text-2xl text-lg"
                     >
                       <FontAwesomeIcon icon={faGithubAlt} />
                     </a>

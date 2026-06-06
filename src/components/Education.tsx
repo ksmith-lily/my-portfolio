@@ -19,7 +19,7 @@ export default function Education() {
           <SectionLabel border={true}>
             BACKGROUND
           </SectionLabel>
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-4xl">
             Education.
           </SectionTitle>
         </div>
@@ -36,9 +36,9 @@ export default function Education() {
               }>
                 {/* Title row with circle */}
                 <div className="p-10">
-                  <h3 className="text-3xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-xl">{item.description}</p>
-                  <p className="text-xl">{item.subtitle}</p>
+                  <h3 className="lg:text-3xl text-sm font-bold mb-2">{item.title}</h3>
+                  <p className="lg:text-xl text-sm ">{item.description}</p>
+                  <p className="lg:text-xl text-sm ">{item.subtitle}</p>
                 </div>
               </div>
             );

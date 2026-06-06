@@ -39,7 +39,7 @@ export default function Skills() {
           <SectionLabel border={true}>
             TECH STACK
           </SectionLabel>
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-2xl">
             Languages.
           </SectionTitle>
         </div>
@@ -70,7 +70,7 @@ export default function Skills() {
         
         {/* Left */}
         <div className="text-left border-b border-dashed border-gray-200 dark:border-zinc-800">
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-2xl">
             Frameworks.
           </SectionTitle>
         </div>
@@ -109,7 +109,7 @@ export default function Skills() {
         
         {/* Left */}
         <div className="text-left border-b border-dashed border-gray-200 dark:border-zinc-800">
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-2xl">
             Libraries.
           </SectionTitle>
         </div>
@@ -163,7 +163,7 @@ export default function Skills() {
         
         {/* Left */}
         <div className="text-left border-b border-dashed border-gray-200 dark:border-zinc-800">
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-2xl">
             Tools.
           </SectionTitle>
         </div>
@@ -194,7 +194,7 @@ export default function Skills() {
         
         {/* Left */}
         <div className="text-left border-b border-dashed border-gray-200 dark:border-zinc-800">
-          <SectionTitle className="text-5xl">
+          <SectionTitle className="xl:text-5xl lg:text-5xl text-2xl">
             Databases.
           </SectionTitle>
         </div>

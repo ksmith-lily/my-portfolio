@@ -12,8 +12,8 @@ function App() {
       <div className="bg-white dark:bg-[rgb(9,8,12)] text-gray-900 dark:text-gray-100">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/my-portfolio" element={<Home />} />
+          <Route path="*" element={<Navigate to="/my-portfolio" replace />} />
         </Routes>
       </div>
       <Footer />
