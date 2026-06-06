@@ -1,16 +1,6 @@
 import SectionLabel from "./SectionLabel";
 import SectionTitle from "./SectionTitle";
 
-const items = [
-  {
-    title: "1001 Lorem ipsum dolor sit amet.",
-    subtitle: "Lorem ipsum dolor sit amet",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    github: "https://github.com/example/project1"
-  },
-];
-
 export default function Summary() {
   return (
     <div className="text-center py-25">

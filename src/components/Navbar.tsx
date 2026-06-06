@@ -8,8 +8,13 @@ export default function Navbar() {
     <nav className="sticky top-0 z-10 border-b border-gray-200 dark:border-zinc-800 bg-white/80 dark:bg-[rgb(9,8,12)]/80 backdrop-blur-md px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center py-3">
         {/* Logo */}
-        <div className="text-xl font-semibold text-black dark:text-white">
-          Lorem Ipsum
+        <div className="flex flex-row gap-3 items-center">
+          <div className="text-lg font-extrabold tracking-tightest text-balance text-rose-500 bg-white px-2 py-0.5 rounded-lg">
+            KS
+          </div>
+          <div className="text-lg font-normal text-black dark:text-zinc-400 tracking-tightest text-balance">
+            Karen Smith
+          </div>
         </div>
 
         {/* Desktop Nav */}
@@ -31,12 +36,12 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/contact" className="hover:text-black dark:hover:text-white transition">
-              Professional Experience
+              Work
             </a>
           </li>
           <li>
             <a href="/contact" className="hover:text-black dark:hover:text-white transition">
-              Personal Projects
+              Projects
             </a>
           </li>
           <ThemeToggle />

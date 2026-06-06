@@ -3,11 +3,10 @@ import SectionTitle from "./SectionTitle";
 
 const items = [
   {
-    title: "1001 Lorem ipsum dolor sit amet.",
-    subtitle: "Lorem ipsum dolor sit amet",
+    title: "BS Information Technology",
+    subtitle: "2018 - 2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    github: "https://github.com/example/project1"
+      "Ateneo De Naga University",
   },
 ];
 
@@ -37,17 +36,9 @@ export default function Education() {
               }>
                 {/* Title row with circle */}
                 <div className="p-10">
-                  <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-gray-500 mb-4">{item.subtitle}</p>
-                  <p className="text-gray-400 mb-4">{item.description}</p>
-                  <a
-                    href={item.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700"
-                  >
-                    View on GitHub
-                  </a>
+                  <h3 className="text-3xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-xl">{item.description}</p>
+                  <p className="text-xl">{item.subtitle}</p>
                 </div>
               </div>
             );

@@ -3,28 +3,60 @@ import SectionTitle from "./SectionTitle";
 
 const items = [
   {
-    title: "1001 Lorem ipsum dolor sit amet.",
-    location: "Lorem, IP",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "JUNE 2025 - PRESENT",
+    company_name: "ARRL, The National Association for Amateur Radio",
+    job_title: "Full Stack Web Developer",
+    location: "Newington, CT",
+    description: [
+      "Develop full-stack web applications using Python frameworks (Django, FastAPI) and React to modernize the company's technology stack.",
+      "Implement OAuth-based authentication integrated with existing applications.",
+      "Introduce unit testing, pre-commit hooks, and CI/CD pipelines using GitHub Actions to improve code quality and reliability.",
+      "Deploy and maintain applications on AWS, supporting scalable and reliable production environments."
+    ]
   },
   {
-    title: "1002 Lorem ipsum dolor sit amet.",
-    location: "Lorem, IP",
-    description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    title: "MAY 2024 - MAY 2025",
+    company_name: "Nexas America LLC",
+    job_title: "Full Stack Web Developer",
+    location: "Hampden, MA",
+    description: [
+      "Led the development of both front-end and back-end components using Vue.js for dynamic user interfaces and PHP with the Laravel framework for robust RESTful API services. Collaborated with UI/UX designers to ensure the development of user-friendly interfaces. ",
+      "Worked alongside senior developers to integrate web application functionalities with desktop services, ensuring seamless communication and high performance.",
+      "Delivered production-ready solutions, overseeing deployment and continuous improvement of features to ensure scalability and reliability.",
+      "Emphasized clean code practices, including SOLID design principles, for long-term project sustainability."
+    ]
   },
   {
-    title: "1003 Lorem ipsum dolor sit amet.",
-    location: "Lorem, IP",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    title: "DEC 2023 - MAY 2024",
+    company_name: "YNS, Philippines Inc.",
+    job_title: "Software Engineer II",
+    location: "Manila, Philippines",
+    description: [
+      "Assigned as one of the lead developers and collaborated with a team to improve and build new features of existing PHP Laravel applications.",
+      "Took an active part in the integration of Firebase with Vue.js project, contributing to enhanced functionality and user experience.",
+      "Assisted new developers with tasks and project-related challenges, ensuring smooth onboarding and successful contributions.",
+    ]
   },
   {
-    title: "1004 Lorem ipsum dolor sit amet.",
-    location: "Lorem, IP",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "AUG 2022 - AUG 2023",
+    company_name: "YNS, Philippines Inc.",
+    job_title: "Software Engineer I",
+    location: "Manila, Philippines",
+    description: [
+      "Gained experience with Agile Scrum methodology, including writing and managing user stories, participating in sprint planning, and contributing to iterative development cycles.",
+      "Collaborated with a team on multiple projects to develop and implement new features using PHP (Laravel), Vue.js, Nuxt.js, and other modern technologies, hosted on AWS, ensuring high-quality, scalable, and efficient application delivery.",
+      "Gained proficiency in unit testing, adopted new technologies, and contributed to improving code quality and development processes.",
+    ]
+  },
+  {
+    title: "JAN 2021 - MAY 2022",
+    company_name: "Pandalivery",
+    job_title: "Web Analyst | Internship",
+    location: "Naga City, Philippines",
+    description: [
+      "Involved in conducting research on emerging technology trends to identify opportunities on improving web applications and adapt to industry changes.",
+      "Evaluated and assessed existing web applications, providing essential insights in improving performance and usability.",
+    ]
   },
 ];
 
@@ -65,13 +97,17 @@ export default function Work() {
                   </div>
 
                   {/* title */}
-                  <div className="text-3xl tracking-tighter font-medium text-balance dark:text-rose-500 text-neutral text-left">
-                    {item.title}
+                  <div className="tracking-tighter font-medium text-balance dark:text-rose-500 text-neutral text-left  xl:flex-row lg:flex-row flex-col gap-2 xl:justify-between items-center">
+                    <div className="lg:text-3xl text-2xl">{item.job_title}</div> 
+                    <div className="lg:text-xl text-lg">{item.title} </div>
                   </div>
                 </div>
                 {/* Location */}
-                <div className="pl-6 px-10 pb-1 -mt-1">
-                  <div className="text-lg text-left font-normal dark:text-white text-neutral-700">
+                <div className="pl-6 px-2 pb-1 -mt-2 flex xl:flex-row lg:flex-row flex-col justify-between">
+                  <div className="lg:text-lg text-sm text-left font-normal dark:text-white text-neutral-700">
+                    {item.company_name}
+                  </div>
+                  <div className="lg:text-lg text-sm text-left font-normal dark:text-white text-neutral-700">
                     {item.location}
                   </div>
                 </div>
@@ -80,9 +116,11 @@ export default function Work() {
                 <div
                   className={`pl-6 px-10 pb-4 ${isLast ? "mb-6" : ""}`}
                 >
-                  <div className="text-lg text-left font-normal dark:text-white text-neutral-700">
-                    {item.description}
-                  </div>
+                  <ul className="list-disc pl-5 space-y-2 lg:text-lg text-sm text-left font-normal dark:text-zinc-400 text-neutral-700">
+                    {item.description.map((description, index) => (
+                      <li key={index}>{description}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             );
