@@ -10,10 +10,10 @@ export default function Navbar() {
       <div className="flex justify-between items-center py-3">
         {/* Logo */}
         <div className="flex flex-row gap-3 items-center">
-          <div className="text-lg font-extrabold tracking-tightest text-balance text-sky-500 bg-white px-2 py-0.5 rounded-lg">
+          <div className="lg:text-lg text-base font-extrabold tracking-tightest text-balance text-sky-500 bg-white px-2 py-0.5 rounded-lg">
             KS
           </div>
-          <div className="text-lg font-normal text-black dark:text-zinc-400 tracking-tightest text-balance">
+          <div className="lg:text-lg text-base font-normal text-black dark:text-zinc-400 tracking-tightest text-balance">
             Karen Smith
           </div>
         </div>
@@ -41,22 +41,22 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden flex flex-col justify-center gap-1.5"
+          className="md:hidden relative w-6 h-6"
           aria-label="Toggle menu"
         >
           <span
-            className={`h-0.5 w-6 bg-black dark:bg-white transition ${
-              isOpen ? "rotate-45 translate-y-2" : ""
+            className={`absolute left-0 top-1/2 h-0.5 w-6 bg-black dark:bg-white transition-all duration-300 ${
+              isOpen
+                ? "rotate-45 -translate-y-1/2"
+                : "-translate-y-1"
             }`}
           />
+
           <span
-            className={`h-0.5 w-6 bg-black dark:bg-white transition ${
-              isOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 bg-black dark:bg-white transition ${
-              isOpen ? "-rotate-45 -translate-y-2" : ""
+            className={`absolute left-0 top-1/2 h-0.5 w-6 bg-black dark:bg-white transition-all duration-300 ${
+              isOpen
+                ? "-rotate-45 -translate-y-1/2"
+                : "translate-y-1"
             }`}
           />
         </button>

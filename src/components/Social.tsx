@@ -5,7 +5,7 @@ export default function Social () {
   return (
     <div className="flex justify-end py-2 gap-2 flex-row">
       <a
-        href=""
+        href="https://github.com/karenangelica"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:bg-black/10 dark:hover:bg-white/10 px-2 py-1 rounded-lg lg:text-2xl text-lg"
@@ -13,7 +13,7 @@ export default function Social () {
         <FontAwesomeIcon icon={faGithubAlt} />
       </a>
       <a
-        href=""
+        href="https://www.linkedin.com/in/kasmith25"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:bg-black/10 dark:hover:bg-white/10 px-2 py-1 rounded-lg lg:text-2xl text-lg"
