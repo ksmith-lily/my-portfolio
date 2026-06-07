@@ -79,7 +79,7 @@ export default function Project() {
                   <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start mb-2">
                     <h3 className="lg:text-xl text-base font-bold tracking-tigtest text-balance">{item.title}</h3>
                     {item.status && 
-                      <div className="bg-rose-600 rounded px-2 lg:text-sm text-xs tracking-tigtest text-balance text-white">IN PROGRESS</div>
+                      <div className="bg-sky-600 rounded px-2 lg:text-sm text-xs tracking-tigtest text-balance text-white">IN PROGRESS</div>
                     }
                   </div>
                   <p className="text-gray-500 mb-4 lg:text-base text-xs">{item.subtitle}</p>

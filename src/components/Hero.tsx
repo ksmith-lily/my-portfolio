@@ -2,6 +2,8 @@ import Typewriter from "./Typewriter";
 import SectionLabel from "./SectionLabel";
 import SectionTitle from "./SectionTitle";
 
+import Social from "./Social";
+
 export default function Hero() {
   return (
     <div className="border-b border-gray-200 dark:border-zinc-800 text-center">
@@ -17,6 +19,7 @@ export default function Hero() {
         <Typewriter text="< I’m passionate about writing clean code, continuous learning, and my cats. />" />
       </div>
       <div className="flex flex-col gap-2 justify-end items-end">
+        <Social />
         <SectionTitle className="xl:text-8xl lg:text-8xl text-4xl">
           Karen Angelica Smith
         </SectionTitle>

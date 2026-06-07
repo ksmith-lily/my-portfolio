@@ -11,7 +11,7 @@ export default function SectionLabel({
 }: SectionLabelProps) {
   return (
     <div
-      className={`text-lg w-full text-left dark:font-medium font-bold tracking-widest text-balance text-rose-500 ${marginClass} ${
+      className={`text-lg w-full text-left font-bold tracking-widest text-balance text-sky-500 ${marginClass} ${
         border
           ? "border-b border-dashed border-gray-200 dark:border-zinc-800"
           : ""

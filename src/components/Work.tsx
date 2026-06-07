@@ -89,15 +89,14 @@ export default function Work() {
                   <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2">
                     
                     {/* outer glow ring */}
-                    <div className="h-5 w-5 rounded-full bg-rose-500/20 animate-ping" />
+                    <div className="h-5 w-5 rounded-full bg-sky-500/20 animate-ping" />
                     
                     {/* inner solid dot */}
-                    <div className="absolute inset-0 m-auto h-2.5 w-2.5 rounded-full bg-rose-500 shadow-[0_0_12px_rgba(244,63,94,0.9)]" />
-
+                    <div className="absolute inset-0 m-auto h-2.5 w-2.5 rounded-full bg-sky-500 shadow-[0_0_12px_rgba(14,165,233,0.9)]" />
                   </div>
 
                   {/* title */}
-                  <div className="tracking-tighter font-medium text-balance dark:text-rose-500 text-neutral text-left  xl:flex-row lg:flex-row flex-col gap-2 xl:justify-between items-center">
+                  <div className="tracking-tighter font-medium text-balance dark:text-sky-500 text-neutral text-left  xl:flex-row lg:flex-row flex-col gap-2 xl:justify-between items-center">
                     <div className="lg:text-3xl text-2xl">{item.job_title}</div> 
                     <div className="lg:text-xl text-lg">{item.title} </div>
                   </div>
