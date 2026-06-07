@@ -17,7 +17,7 @@ export default function Typewriter({text}: {text: string}) {
   }, []);
 
   return (
-    <span className="text-xl tracking-widest dark:text-white text-zinc-900 font-mono">
+    <span className="xl:text-xl lg:text-xl text-base tracking-widest dark:text-white text-zinc-900 font-mono">
       {displayed}
        <span className="cursor-blink">|</span>
     </span>

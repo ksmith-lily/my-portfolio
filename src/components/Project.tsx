@@ -71,8 +71,8 @@ export default function Project() {
 
             return (
               <div key={index} className={`
-                w-full text-left border-gray-200 border-dashed dark:border-zinc-800 ${isOdd ? 'border-l border-r' : 'border-r'}
-                ${!isLastGridItem && 'border-b'}`
+                w-full text-left border-gray-200 border-dashed dark:border-zinc-800 ${isOdd ? 'lg:border-l lg:border-r border-b border-r' : 'lg:border-r border-b border-r'}
+                ${!isLastGridItem && 'lg:border-b'}`
               }>
                 {/* Title row with circle */}
                 <div className="p-10">

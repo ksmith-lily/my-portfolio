@@ -15,8 +15,8 @@ export default function Summary() {
           </SectionTitle>
         </div>
 
-        <div className="xl:text-xl lg:text-xl text-base text-left my-4 tracking-wide">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div className="xl:text-xl lg:text-xl text-sm text-left my-4 tracking-wide">
+          I’m a Full Stack Web Developer with over three years of experience building modern web applications from concept to deployment. I enjoy working across the entire stack, from designing intuitive user interfaces with React and Vue to developing robust back-end systems with Django, FastAPI, and Laravel. Throughout my career, I’ve collaborated in Agile teams, designed RESTful APIs, and applied software engineering principles such as SOLID to create scalable and maintainable solutions. I’m passionate about clean code, continuous learning, and crafting products that deliver meaningful experiences for users.
         </div>
       </div>
     </div>
