@@ -18,7 +18,7 @@ const items = [
     subtitle: "Web Application | (React) Typescript",
     description:
       "Designed and developed a responsive portfolio website to showcase professional experience, technical skills, and personal projects. Built with React, TypeScript, and Tailwind CSS, featuring dark mode support, interactive UI components, and a modern user experience.",
-    github: "https://github.com/karenangelica/my-portfolio"
+    github: "https://github.com/ksmith-lily/my-portfolio"
   },
   {
     title: "EDITOR HANDLER | THIRD PARTY",
