@@ -11,12 +11,22 @@ function Home() {
   return (
     <Container>
       <div className="min-h-screen">
-        <Hero />
-        <Summary />
-        <Skills />
-        <Work />
-        <Project />
-        <Education />
+        <section id="home">
+          <Hero />
+          <Summary />
+        </section>
+        <section id="tech-stack">
+          <Skills />
+        </section>
+        <section id="work">
+          <Work />
+        </section>
+        <section id="projects">
+          <Project />
+        </section>
+        <section id="education">
+          <Education />
+        </section>
       </div>
 
     </Container>

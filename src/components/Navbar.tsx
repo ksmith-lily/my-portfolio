@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import NavButton from "./NavButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center py-3">
         {/* Logo */}
         <div className="flex flex-row gap-3 items-center">
-          <div className="text-lg font-extrabold tracking-tightest text-balance text-rose-500 bg-white px-2 py-0.5 rounded-lg">
+          <div className="text-lg font-extrabold tracking-tightest text-balance text-sky-500 bg-white px-2 py-0.5 rounded-lg">
             KS
           </div>
           <div className="text-lg font-normal text-black dark:text-zinc-400 tracking-tightest text-balance">
@@ -20,29 +21,19 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-6 text-black dark:text-gray-400">
           <li>
-            <a href="/" className="hover:text-black dark:hover:text-white transition">
-              Home
-            </a>
+            <NavButton targetId="home">Home</NavButton>
           </li>
           <li>
-            <a href="/about" className="hover:text-black dark:hover:text-white transition">
-              About
-            </a>
+            <NavButton targetId="tech-stack">Tech Stack</NavButton>
           </li>
           <li>
-            <a href="/contact" className="hover:text-black dark:hover:text-white transition">
-              Tech Stack
-            </a>
+            <NavButton targetId="work">Work</NavButton>
           </li>
           <li>
-            <a href="/contact" className="hover:text-black dark:hover:text-white transition">
-              Work
-            </a>
+            <NavButton targetId="projects">Projects</NavButton>
           </li>
           <li>
-            <a href="/contact" className="hover:text-black dark:hover:text-white transition">
-              Projects
-            </a>
+            <NavButton targetId="education">Education</NavButton>
           </li>
           <ThemeToggle />
         </ul>
@@ -79,23 +70,21 @@ export default function Navbar() {
       >
         <ul className="flex flex-col gap-4 text-black dark:text-gray-400">
           <li>
-            <a href="/" onClick={() => setIsOpen(false)}>
-              Home
-            </a>
+            <NavButton targetId="home">Home</NavButton>
           </li>
           <li>
-            <a href="/about" onClick={() => setIsOpen(false)}>
-              About
-            </a>
+            <NavButton targetId="tech-stack">Tech Stack</NavButton>
           </li>
           <li>
-            <a href="/contact" onClick={() => setIsOpen(false)}>
-              Contact
-            </a>
+            <NavButton targetId="work">Work</NavButton>
           </li>
           <li>
-            <ThemeToggle />
+            <NavButton targetId="projects">Projects</NavButton>
           </li>
+          <li>
+            <NavButton targetId="education">Education</NavButton>
+          </li>
+          <ThemeToggle />
         </ul>
       </div>
     </nav>
