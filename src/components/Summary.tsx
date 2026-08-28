@@ -16,8 +16,9 @@ export default function Summary() {
         </div>
 
         <div className="xl:text-xl lg:text-xl text-sm text-left my-4 tracking-wide">
-          I’m a Full Stack Web Developer with over three years of experience building modern web applications from concept to deployment. I enjoy working across the entire stack, from designing intuitive user interfaces with React and Vue to developing robust back-end systems with Django, FastAPI, and Laravel. Throughout my career, I’ve collaborated in Agile teams, designed RESTful APIs, and applied software engineering principles such as SOLID to create scalable and maintainable solutions. I’m passionate about clean code, continuous learning, and crafting products that deliver meaningful experiences for users.
-        </div>
+          I’m a Full Stack Software Developer with over four years of experience building web applications from idea to launch. I enjoy working across the full stack, whether I’m creating user-friendly interfaces with React and Vue or building the back end with Django, FastAPI, and Laravel.
+          <br></br><br></br>
+          I’ve worked on everything from APIs and third-party integrations to authentication, payments, databases, testing, and deployment. I enjoy solving real-world problems, learning new technologies, and building applications that are reliable, maintainable, and easy to use.        </div>
       </div>
     </div>
   );
